@@ -7,7 +7,13 @@
   ],
   "dependencies": {
     "lodash": "^4.17.4",
-    "reselect": "^3.0.0"
+    "reselect": "^3.0.0",
+    "snyk": "^1.189.0"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
